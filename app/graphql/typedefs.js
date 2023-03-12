@@ -3,7 +3,7 @@ import { gql } from "graphql-tag";
 const typeDefs = gql`
   type Query {
     "Get all the classes. If there are no classes, return an empty array."
-    classes: [Class]!
+    classes: [Class!]!
   }
 
   "A class in our 🏫."
