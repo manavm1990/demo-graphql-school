@@ -1,8 +1,10 @@
 import { gql } from "graphql-tag";
 
+// We define what users are allowed to do (e.g. Query)
 const typeDefs = gql`
   type Query {
     "Get all the classes. If there are no classes, return an empty array."
+    # '!' means CANNOT be null
     classes: [Class!]!
   }
 

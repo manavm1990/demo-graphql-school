@@ -1,5 +1,7 @@
 import classController from "../class/controller.js";
 
+// We resolve the queries from 'typeDefs'.
+// The names must match.
 const resolvers = {
   Query: {
     async classes() {
