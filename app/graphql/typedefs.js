@@ -12,6 +12,13 @@ const typeDefs = gql`
     class(_id: ID!): Class
   }
 
+  type Mutation {
+    "Create a new 🏫."
+    createSchool(name: String!, location: String!, studentCount: Int): School
+    "Move a class to a new building."
+    updateClassBuilding(_id: ID!, newBuilding: String!): Class
+  }
+
   "A school in our 🏫."
   type School {
     _id: ID!
