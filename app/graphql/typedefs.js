@@ -12,6 +12,7 @@ const typeDefs = gql`
     class(_id: ID!): Class
   }
 
+  "A school in our 🏫."
   type School {
     _id: ID!
     "The name of the school."
@@ -37,6 +38,7 @@ const typeDefs = gql`
     professor: Professor
   }
 
+  "A professor at our 🏫."
   type Professor {
     _id: ID!
     name: String!
